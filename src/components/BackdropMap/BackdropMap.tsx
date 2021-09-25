@@ -13,7 +13,7 @@ const BackdropMap = () => {
   });
 
   return (
-    <div className={styles.Map} data-testid="Map">
+    <div className={styles.BackdropMap} data-testid="Map">
       <InteractiveMap
         mapStyle={
           "https://api.maptiler.com/maps/darkmatter/style.json?key=KPAes9JewZwTvw7aTuuq"
