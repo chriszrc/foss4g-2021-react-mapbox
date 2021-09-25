@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import "mapbox-gl/dist/mapbox-gl.css";
+//NOTE even though we've aliased mapbox to maplibre, we still have to change the name here 😡
+import "maplibre-gl/dist/maplibre-gl.css";
+import BackdropMap from "./components/BackdropMap/BackdropMap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -19,7 +21,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <BackdropMap />
     </div>
   );
 }
