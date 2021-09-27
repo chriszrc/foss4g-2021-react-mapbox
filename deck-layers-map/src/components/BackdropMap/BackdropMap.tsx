@@ -9,7 +9,8 @@ import {
 // import { MapboxProps } from "react-map-gl/src/mapbox/mapbox";
 import styles from "./BackdropMap.module.css";
 import { ViewportProps } from "react-map-gl/src/utils/map-state";
-import MbxHomeControl from "../MbxHomeControl/MbxHomeControl";
+import { MbxHomeControl } from "rmg-component-lib";
+// import MbxHomeControl from "../MbxHomeControl/MbxHomeControl";
 
 // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
 const AIR_PORTS =
