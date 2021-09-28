@@ -2,7 +2,9 @@ import React, { MouseEvent, useCallback } from "react";
 import { fitBounds } from "@math.gl/web-mercator";
 import { WebMercatorViewport } from "react-map-gl";
 import { ViewportProps } from "react-map-gl/src/utils/map-state";
+
 import "./MbxHomeControl.css";
+import { HomeRounded } from "@mui/icons-material";
 
 export type Viewport = Omit<ViewportProps, "width" | "height"> &
   Partial<{
@@ -57,8 +59,9 @@ const MbxHomeControl: React.FC<MbxHomeControlProps> = (props) => {
     <div className="MbxHomeControl" data-testid="MbxHomeControl">
       <div className="mapboxgl-ctrl-group mapboxgl-ctrl">
         <button onClick={goToHome} className="mapboxgl-ctrl-icon" type="button">
-          <span className="mapboxgl-ctrl-icon">H</span>
-          {/* <ExpandIcon /> */}
+          <span className="mapboxgl-ctrl-icon">
+            <HomeRounded className="homeRoundedIcon" />
+          </span>
         </button>
       </div>
     </div>

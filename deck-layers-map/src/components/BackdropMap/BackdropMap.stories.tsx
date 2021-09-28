@@ -1,12 +1,12 @@
 /* eslint-disable */
-import BackdropMap from './BackdropMap';
+import BackdropMap from "./BackdropMap";
 
 export default {
   title: "BackdropMap",
 };
 
-export const Default = () => <BackdropMap />;
+export const Default = () => <BackdropMap layers={[]} />;
 
 Default.story = {
-  name: 'default',
+  name: "default",
 };

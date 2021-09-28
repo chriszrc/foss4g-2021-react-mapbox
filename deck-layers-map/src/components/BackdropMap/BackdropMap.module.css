@@ -1,2 +1,11 @@
 .BackdropMap {
 }
+
+.navContainer {
+  position: absolute;
+  right: 0px;
+  bottom: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
