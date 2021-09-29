@@ -56,6 +56,7 @@ const MbxHomeControl: React.FC<MbxHomeControlProps> = (props) => {
       <div className="mapboxgl-ctrl-group mapboxgl-ctrl">
         <button onClick={goToHome} className="mapboxgl-ctrl-icon" type="button">
           <span className="mapboxgl-ctrl-icon">H</span>
+          {/* //TODO for material icons, start with the external library we're going to create */}
           {/* <ExpandIcon /> */}
         </button>
       </div>

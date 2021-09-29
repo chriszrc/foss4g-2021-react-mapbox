@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DeckGL from "deck.gl";
 import {
+  FullscreenControl,
   InteractiveMap,
   LayerProps,
   NavigationControl,
@@ -70,6 +71,7 @@ const BackdropMap: React.FC<BackdropMapProps> = (props) => {
             className="navigation-control"
             // style="navStyle"
           />
+          <FullscreenControl style={{ top: -12 }} />
           <MbxHomeControl
             //World bounds
             boundsExtent={[

@@ -23,7 +23,11 @@
 
   <body>
     <!-- Add your site or application content here -->
-    <layer-drawer [title]="title">
+    <layer-drawer
+      title="title"
+      active-layer-ids='["H3 Radio Sources"]'
+      layers='[{"id":"Airports","getFillColor":[200,0,80,180]},{"id":"Arcs","getSourceColor":[0,128,200]},{"id":"H3 Radio Sources"}]'
+    >
       <p>Hello world! This is HTML5 Boilerplate.</p>
     </layer-drawer>
     <!-- <div id="root"></div> -->
