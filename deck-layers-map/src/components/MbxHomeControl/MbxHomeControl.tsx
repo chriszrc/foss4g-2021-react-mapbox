@@ -16,7 +16,9 @@ export const DefaultMbxHomeControlProps = {
     [0, 0],
   ] as Parameters<typeof fitBounds>[0]["bounds"],
   viewport: {} as Viewport,
-  onViewportChange: (viewport: Viewport) => {},
+  onViewportChange: (viewport: Viewport) => {
+    console.log(viewport);
+  },
 };
 export type MbxHomeControlProps = typeof DefaultMbxHomeControlProps;
 

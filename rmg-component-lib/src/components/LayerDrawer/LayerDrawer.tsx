@@ -16,10 +16,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
+// import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Fab from "@mui/material/Fab";
 import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 const drawerWidth = 240;
 
@@ -136,14 +137,18 @@ const LayerDrawer: React.FC<LayerDrawerProps> = (props) => {
             {props.layers.map((l) => (
               <div key={l.id}>
                 <ListItem button>
-                  <ListItemIcon>
-                    <Checkbox
-                      checked={state[l.id]}
-                      onChange={handleChange}
-                      name={l.id}
-                    />
-                  </ListItemIcon>
-                  <ListItemText primary={l.id} />
+                  <FormControlLabel
+                    value="end"
+                    control={
+                      <Checkbox
+                        checked={state[l.id]}
+                        onChange={handleChange}
+                        name={l.id}
+                      />
+                    }
+                    label={<ListItemText primary={l.id} />}
+                    labelPlacement="end"
+                  />
                 </ListItem>
                 <Divider />
               </div>

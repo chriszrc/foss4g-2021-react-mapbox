@@ -61,7 +61,7 @@ function App() {
       getHexagon: (d: any) => d.hex,
       getFillColor: (d: any) => [255, (1 - d.count / 50) * 255, 0],
       getElevation: (d: any) => d.count,
-      opacity: 0.3,
+      opacity: 0.4,
     }),
   ];
 
